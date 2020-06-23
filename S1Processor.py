@@ -98,7 +98,7 @@ class Configuration():
            print self.tiles_list
         except:
            tiles=config.get('Processing','Tiles')
-           self.tiles_list = [s.strip() for s in tiles.split(", ")]
+           self.tiles_list = [s.strip() for s in tiles.split(",")]
         
         self.TileToProductOverlapRatio=config.getfloat('Processing','TileToProductOverlapRatio')
         self.Mode=config.get('Processing','Mode')
